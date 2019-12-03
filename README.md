@@ -29,6 +29,9 @@ Lors de la prise des mesures, des problèmes techniques sont survenus.
 Les scientifques ont perdu des données. Utilisez les techniques de
 régularisation des séries afin d’aider les scientifiques.
 
+Les scientifiques ont besoin le plus rapidement possible des données de
+température.
+
 ``` r
 chart(mp, Temperature ~ Station) +
   geom_line()
