@@ -1,0 +1,33 @@
+---
+title: "Analyse des mesures physico-chimiques lors du transect Nice-Calvi"
+output: github_document
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R
+```
+
+## Contexte
+
+Des scientifiques ont réalisé des mesures physico-chimiques lors d'un transect entre Nice et Calvi.
+
+```{r}
+(mp <- read("data/marphy2.rds"))
+```
+
+Lors de la prise des mesures, des problèmes techniques sont survenus. Les scientifques ont perdu des données. Utilisez les techniques de régularisation des séries afin d'aider les scientifiques.
+
+```{r}
+chart(mp, Temperature ~ Station) +
+  geom_line()
+```
+
+
+Dans un bref rapport, analysez les données régularisées. Testez différents outils de régularisation afin de trouver l'outil le plus adapté à tes données.
+
+
+
+
+
+
